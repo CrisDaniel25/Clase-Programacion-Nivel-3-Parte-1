@@ -2,6 +2,7 @@
 using HtmlAgilityPack;
 using ScrapySharp.Extensions;
 using System.Linq;
+using System.Threading;
 
 namespace Tarea_1.Program_6
 {
@@ -18,14 +19,25 @@ namespace Tarea_1.Program_6
             HtmlWeb Web = new HtmlWeb();
             HtmlDocument document = Web.Load(URL);
 
-            HtmlNode Imange = document.DocumentNode.CssSelect("img").First();
-            var img = Imange.InnerLength;
+            try
+            {
+                HtmlNode Imange = document.DocumentNode.CssSelect("img").First();
+                var img = Imange.InnerLength;
 
-            HtmlNode Paragraph = document.DocumentNode.CssSelect("p").First();
-            var P = Paragraph.InnerLength;
+                HtmlNode Paragraph = document.DocumentNode.CssSelect("p").First();
+                var P = Paragraph.InnerLength;
 
-            Console.WriteLine(img);
-            Console.WriteLine(P);
+                Console.WriteLine(img);
+                Console.WriteLine(P);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                Console.WriteLine("\nTry again....");
+                Thread.Sleep(3000);
+                Console.Clear();
+                Exercise_6();
+            }
 
             Pause();
         }

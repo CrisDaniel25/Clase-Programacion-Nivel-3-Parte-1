@@ -16,13 +16,13 @@ namespace Tarea_1.Program_2
             Console.WriteLine("\n* Name: " + Name);
             Console.WriteLine("\n\t" + Message);
             Pause();
-            Console.WriteLine("\n* Last Name: " + Name);
+            Console.WriteLine("\n* Last Name: " + Last_Name);
             Console.WriteLine("\n\t" + Message);
             Pause();
-            Console.WriteLine("\n* Enrollment: " + Last_Name);
+            Console.WriteLine("\n* Enrollment: " + Enrollment);
             Console.WriteLine("\n\t" + Message);
             Pause();
-            Console.WriteLine("\n* Contact: " + Enrollment);
+            Console.WriteLine("\n* Contact: " + Contact);
             Console.WriteLine("\n\t" + Message);
             Pause();
             Console.WriteLine("\n* School Mail: " + Mail + "\n\n\tEnd you can press enter for going to Menu again....");

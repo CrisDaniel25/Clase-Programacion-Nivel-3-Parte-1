@@ -27,7 +27,7 @@ namespace Tarea_1.Program_5
             try
             {
                 File.WriteAllText(Path + "\\" + "Content" + ".html", HTML());
-                Console.WriteLine("\n\tDocument was created successful\n");
+                Console.WriteLine("\n\tDocument was created successful in " + Path + "\n");
             }
             catch(Exception ex)
             {
