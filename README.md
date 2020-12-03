@@ -1,5 +1,4 @@
 # Tarea-P-III
-Tarea #1 programacion
 
 Realiza los siguientes programas usando c# net core
 
